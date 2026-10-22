@@ -2,3 +2,8 @@
 /* Official logo asset */
 .brand-logo{display:block;width:min(250px,48vw);height:auto;max-height:72px;object-fit:contain;object-position:left center}
 @media(max-width:760px){.brand-logo{width:min(205px,56vw);max-height:58px}}
+
+/* Preserve full official logo geometry and natural aspect ratio. */
+.site-header .brand{flex-shrink:0;min-width:0}
+.site-header .brand-logo{width:290px;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:left center}
+@media(max-width:760px){.site-header .brand-logo{width:210px;max-width:55vw;height:auto;max-height:none}}
