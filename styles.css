@@ -7,3 +7,9 @@
 .site-header .brand{flex-shrink:0;min-width:0}
 .site-header .brand-logo{width:290px;max-width:100%;height:auto;max-height:none;object-fit:contain;object-position:left center}
 @media(max-width:760px){.site-header .brand-logo{width:210px;max-width:55vw;height:auto;max-height:none}}
+
+/* Header sizing fix: constrain the image to the header instead of allowing oversized intrinsic dimensions. */
+.site-header{height:100px;min-height:100px;overflow:visible}
+.site-header .brand{display:flex;align-items:center;width:260px;max-width:55%;height:76px;flex:0 1 260px}
+.site-header .brand-logo{display:block!important;width:100%!important;max-width:100%!important;height:100%!important;max-height:76px!important;object-fit:contain!important;object-position:left center!important}
+@media(max-width:760px){.site-header{height:78px;min-height:78px}.site-header .brand{width:205px;max-width:58%;height:58px;flex-basis:205px}.site-header .brand-logo{max-height:58px!important}}
